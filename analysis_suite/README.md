@@ -1,6 +1,6 @@
-# CacaoCipher Analyses Suite
+# Analysis Suite
 
-This repository contains additional, reviewer-facing analyses for the CacaoCipher manuscript.
+This repository contains additional analyses for the CacaoCipher manuscript.
 It is designed to be run from an Anaconda prompt and to produce publication-ready outputs.
 
 ## Expected inputs
