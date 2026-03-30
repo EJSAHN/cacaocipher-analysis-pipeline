@@ -1,27 +1,36 @@
 ```md
-# DATA_SOURCES
+# Data Sources
 
-This repo does not include raw/compiled spreadsheets under `data_raw/`.
-They may include third-party material or compiled working files.
+This repository does not redistribute raw or compiled spreadsheets placed under `data_raw/` or `master/`, because some files are locally curated working tables and may include third-party source material.
 
-## Required inputs (place locally under data_raw/)
-1) Bekeley-structure analysis.xlsx
-- Role: ICGT genotype/phenotype + Acc Group labels used for panel design and downstream validation.
-- Source/license: (https://doi.org/10.1371/journal.pone.0260907; paper is open access but this XLSX is a compiled working file)
+## Required local inputs
 
-2) Supplementary Data 1_R1 ver.xlsx
-- Role: PR/TARS validation phenotypes used to regenerate Supplementary Data 1.
-- Source/license: (https://doi.org/10.1186/s12870-025-07128-y)
+To reproduce the analyses, place the required input files in your local project directories as expected by the scripts.
 
-3) Temperature data-Brain's PR work.csv
-- Role: climate summary (PR/TARS context).
-- Source/license: (https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)
+### 1. ICGT genotype/phenotype master table
+**Expected role:** master input containing ICGT accession identifiers, SNP genotypes, phenotype fields, and Acc Group labels used for panel design, benchmarking, and downstream analyses.  
+**Primary source:** Bekele et al. (2022), PLOS ONE  
+**DOI:** https://doi.org/10.1371/journal.pone.0260907
 
-## Optional files (NOT required for core reproduction)
-- Methods GRIN-Global.xlsx
-- first paper align.xlsx
-- bekeley vs bekeley study structure.xlsx
-- Second paper alignment-criollo.xlsx
-- PR-Osorio-Guarín et al Correlation.xlsx
+### 2. PR/TARS phenotype validation table
+**Expected role:** Puerto Rico (TARS) field-trial phenotypes used for overlap-based cross-environment validation analyses.  
+**Primary source:** Baek et al. (2025), BMC Plant Biology  
+**DOI:** https://doi.org/10.1186/s12870-025-07128-y
 
-These are not redistributed here.
+### 3. ICGT–PR/TARS accession overlap table
+**Expected role:** accession-matching file linking ICGT materials to PR/TARS records for overlap-based validation.  
+**Source:** locally curated linkage table derived from manuscript-associated working files.
+
+## Optional contextual inputs
+
+### 4. Climate/context table for the PR/TARS trial
+**Expected role:** optional descriptive climate summary for the Puerto Rico trial.  
+**Use in this repository:** contextual only; not required to reproduce barcode design, benchmarking, or validation analyses.  
+**Primary source:** NOAA Global Historical Climatology Network-Daily (GHCN-Daily)  
+**Source URL:** https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily
+
+## Notes
+
+- Local working files with internal names such as alignment spreadsheets or intermediate harmonization tables are not required for public use unless explicitly referenced by the scripts.
+- If you use differently named local files, rename them to the expected filenames or update the file paths in your local configuration before running the scripts.
+- Supplementary Data S1 distributed with the manuscript contains curated reporting outputs, not all raw upstream inputs.
