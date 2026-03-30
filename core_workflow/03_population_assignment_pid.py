@@ -1,22 +1,20 @@
-"""Population assignment and multilocus probability-of-identity analyses for CacaoCipher."""
-#
-# Population assignment + Probability of Identity (P(ID)) analyses
-#
-# Expected inputs (relative to project root):
-#   Bekele/master/icgt_geno_master.csv
-#   Bekele/master/icgt_pheno_master.csv
-#   Bekele/master/barcode_panel_32_stats.csv
-#
-# Outputs:
-#   Bekele/master/panel_population_assignment_accuracy.csv
-#   Bekele/master/panel_PID_summary.csv
-#
-# Optional supplementary (CSV only by default):
-#   Bekele/master/supplementary/S1_full_536_confusion_counts.csv
-#   Bekele/master/supplementary/S1_full_536_confusion_norm_by_true.csv
-#   Bekele/master/supplementary/S1_pureID_32_confusion_counts.csv
-#   Bekele/master/supplementary/S1_pureID_32_confusion_norm_by_true.csv
-#
+"""Population assignment and multilocus probability-of-identity analyses for CacaoCipher.
+
+Expected inputs (relative to the project root):
+  core_workflow/master/icgt_geno_master.csv
+  core_workflow/master/icgt_pheno_master.csv
+  core_workflow/master/barcode_panel_32_stats.csv
+
+Primary outputs:
+  core_workflow/master/panel_population_assignment_accuracy.csv
+  core_workflow/master/panel_PID_summary.csv
+
+Optional supplementary outputs (CSV by default):
+  core_workflow/master/supplementary/S1_full_536_confusion_counts.csv
+  core_workflow/master/supplementary/S1_full_536_confusion_norm_by_true.csv
+  core_workflow/master/supplementary/S1_pureID_32_confusion_counts.csv
+  core_workflow/master/supplementary/S1_pureID_32_confusion_norm_by_true.csv
+"""
 
 import math
 import re
