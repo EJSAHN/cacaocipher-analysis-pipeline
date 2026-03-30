@@ -1,5 +1,5 @@
 """
-Script 2 (public): Barcode-panel design, QC, and Supplementary workbook regeneration.
+Script 2: Barcode-panel design, QC, and Supplementary workbook regeneration.
 
 This script reproduces the analysis outputs used for the manuscript, while removing
 all figure-generation code (no plotting, no PNG/PDF outputs).
