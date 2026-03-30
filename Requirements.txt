@@ -1,0 +1,9 @@
+# REQUIREMENTS_BENCHMARKS.txt
+# Python dependencies for Add_on/ (benchmarking + confounding + LD/capacity + structure preservation)
+
+numpy
+pandas
+scikit-learn
+matplotlib
+openpyxl
+scipy
