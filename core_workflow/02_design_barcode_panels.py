@@ -1,8 +1,11 @@
 """
 Script 2: Barcode-panel design, QC, and Supplementary workbook regeneration.
 
-This script reproduces the analysis outputs used for the manuscript, while removing
-all figure-generation code (no plotting, no PNG/PDF outputs).
+This script reproduces the core table-based analysis outputs used for the manuscript.
+
+It writes master-level CSV summaries and regenerates a manuscript-associated
+supplementary workbook. Figure generation is handled separately in the
+analysis suite when applicable.
 
 Expected inputs (relative to BASE_DIR):
   master/icgt_geno_master.csv
