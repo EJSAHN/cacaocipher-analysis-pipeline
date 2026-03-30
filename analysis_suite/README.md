@@ -20,8 +20,8 @@ conda env create -f environment.yml
 conda activate cacaocipher
 python run_analyses.py --project-root .
 
-If your files are nested (e.g., `master/master/*.csv`), pass `--master-dir master/master`.
 ```
+If your files are nested (e.g., `master/master/*.csv`), pass `--master-dir master/master`.
 
 Outputs will be written to `analysis_outputs/` by default.
 
