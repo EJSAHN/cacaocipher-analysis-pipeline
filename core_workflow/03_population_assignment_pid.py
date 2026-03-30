@@ -1,9 +1,6 @@
 """Population assignment and multilocus probability-of-identity analyses for CacaoCipher."""
-
-# 03_population_assignment_and_pid.py
 #
 # Population assignment + Probability of Identity (P(ID)) analyses
-# (cleaned for public/GitHub use; calculations preserved from the original notebook cells)
 #
 # Expected inputs (relative to project root):
 #   Bekele/master/icgt_geno_master.csv
@@ -20,9 +17,6 @@
 #   Bekele/master/supplementary/S1_pureID_32_confusion_counts.csv
 #   Bekele/master/supplementary/S1_pureID_32_confusion_norm_by_true.csv
 #
-# NOTE:
-# - The “demo” cell that constructs an example genotype vector (for p≈0.5) is intentionally not executed here.
-#   It was only a sanity-check example and is not part of manuscript outputs.
 
 import math
 import re
