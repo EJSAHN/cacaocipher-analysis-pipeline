@@ -712,7 +712,7 @@ print(trait_cols)
 multi_rows = []
 
 for trait in trait_cols:
-    print(f"\n[INFO] Trait-aware panel for {trait}")
+    print(f"\n[INFO] Trait-enriched panel for {trait}")
 
     y = icgt_pheno[trait].values.astype(float)
 
